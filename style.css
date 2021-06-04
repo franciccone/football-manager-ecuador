@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #F3EDE2;
+    --color-gold: #C8A977;
+    --color-yellow: #FFCD00;
+    --color-red: #C5113C;
+    --color-blue: #00205C;
+}
+
+html {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "footer";
+}
+
+header, footer {
+    background-color: var(--color-blue);
+}
+
+main {
+    background-color: var(--color-white);
+}
+
+/* --- HEADER --- */
+
+.header {
+    grid-area: header;
+    position: relative;
+    padding: 0 0 1em 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 1em 0 1em;
+    font-size: 1.1em;
+    color: var(--color-gold);
+    text-transform: uppercase;
+}
+
+/* --- MAIN --- */
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hero"
+        "stars";
+}
+
+/* --- HERO --- */
+
+.hero {
+    grid-area: hero;
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url('media/damiandiaz.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gold);
+    text-shadow: 2px 2px var(--color-blue);
+    font-size: calc(1em + 3vw);
+    text-transform: uppercase;
+    transform: translate(0, 500%);
+}
+
+/* --- STARS SECTION --- */
+
+.stars {
+    grid-area: stars;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+/* --- FOOTER --- */
+
+.footer {
+    grid-area: footer;
+}
+
+.social-media-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3em 0;
+}
+
+.social-media-icon {
+    margin: 0 0.4em;
+    font-size: 1.2em;
+    color: #C8A977
+}
