@@ -186,6 +186,17 @@ header, footer {
     .hero-title {
         font-size: 3.5rem;
     }
+
+    .icon-footer {
+        margin: 0 0.5em;
+        font-size: 1.5em;
+        color: var(--color-gold);
+        transition: transform .2s;
+    }
+    
+    .icon-footer:hover {
+        transform: scale(1.20) !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
