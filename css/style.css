@@ -31,28 +31,40 @@ header, footer {
 /* --- HEADER --- */
 
 .header {
-    position: relative;
-    padding: 0 0 1em 0;
+    padding: 1em 0;
 }
 
-.menu {
+.menu-list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.menu ul li {
-    display: inline-block;
-    margin: 0 1em 0 1em;
-    font-size: 1.1em;
+.menu-link {
+    font-size: 1.3em;
+    font-weight: 600;
     color: var(--color-gold);
     text-transform: uppercase;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-gold);
 }
 
 /* --- HERO --- */
 
 .hero {
-    background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(media/damiandiaz.webp);
+    background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(../media/damiandiaz.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
@@ -149,8 +161,19 @@ header, footer {
 /* --- MEDIA QUERIES --- */
 
 @media only screen and (min-width: 992px) {
+    .menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gold);
+    text-transform: uppercase;
+}
+
     .hero {
-        background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(media/damiandiaz.webp);
+        background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(../media/damiandiaz.webp);
         background-repeat: no-repeat;
         background-size: cover;
         height: 80vh;
@@ -163,4 +186,43 @@ header, footer {
     .hero-title {
         font-size: 3.5rem;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-list {
+        position: fixed;
+        left: -100%;
+        top: 2.5rem;
+        flex-direction: column;
+        background-color: var(--color-blue);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .menu-list.active {
+        left: 0;
+    }
+
+    .menu-item {
+        margin: 1.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
