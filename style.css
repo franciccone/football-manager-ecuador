@@ -103,6 +103,14 @@ header, footer {
     padding: 1em 3em;
 }
 
+.stars-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 2rem;
+}
+
 /* --- FOOTER --- */
 
 .social-media-list {
@@ -115,23 +123,32 @@ header, footer {
     margin: 0.5em 0;
 }
 
-.iconify {
+.icon-footer {
     margin: 0 0.4em;
     font-size: 1.3em;
     color: var(--color-gold);
     transition: transform .2s;
 }
 
-.iconify {
-    transform: scale(1.2);
+.icon-footer:hover {
+    transform: scale(1.15) !important;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 0 0 0.5em 0;
+    color: var(--color-gold);
+    font-size: 0.8rem;
 }
 
 /* --- MEDIA QUERIES --- */
 
 @media only screen and (min-width: 992px) {
     .hero {
-        background-position: center;
-        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(media/damiandiaz.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
 }
 
     .hero-txt {
