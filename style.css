@@ -24,33 +24,13 @@ html {
     font-size: 16px;
 }
 
-/* --- GRID --- */
-
-.container-grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "main"
-        "footer";
-}
-
-/* --- BACKGROUNDS' COLORS --- */
-
 header, footer {
     background-color: var(--color-blue);
-}
-
-main {
-    background-color: var(--color-white);
 }
 
 /* --- HEADER --- */
 
 .header {
-    grid-area: header;
     position: relative;
     padding: 0 0 1em 0;
 }
@@ -69,71 +49,73 @@ main {
     text-transform: uppercase;
 }
 
-/* --- MAIN --- */
-
-.main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "hero"
-        "stars";
-}
-
 /* --- HERO --- */
 
 .hero {
-    grid-area: hero;
-    width: 100%;
-    height: 450px;
-    background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url('media/damiandiaz.webp');
+    background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(media/damiandiaz.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 75vh;
+}
+
+.hero-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hero-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-gold);
-    /* text-shadow: 2px 2px var(--color-blue); */
-    font-size: 4em;
+    margin: 0;
+    font-size: 3rem;
     font-weight: 900;
+    color: var(--color-gold);
     text-transform: uppercase;
-    transform: translate(0, 500%);
 }
 
 /* --- STARS SECTION --- */
 
 .stars {
-    grid-area: stars;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1em 0;
+    background-color: var(--color-white);
+    padding: 1em 3em;
 }
 
 /* --- FOOTER --- */
-
-.footer {
-    grid-area: footer;
-}
 
 .social-media-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5em 0;
 }
 
 .social-media-icon {
+    margin: 0.5em 0;
+}
+
+.iconify {
     margin: 0 0.4em;
     font-size: 1.3em;
-    color: #C8A977;
+    color: var(--color-gold);
     transition: transform .2s;
 }
 
-.social-media-icon:hover {
+.iconify {
     transform: scale(1.2);
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media only screen and (min-width: 992px) {
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(media/damiandiaz.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+}
 }
