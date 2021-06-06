@@ -62,16 +62,34 @@ header, footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
     text-align: center;
 }
 
 .hero-title {
-    margin: 0;
     font-size: 3rem;
     font-weight: 900;
     color: var(--color-gold);
     text-transform: uppercase;
+}
+
+.glassy {
+    background-image: -webkit-linear-gradient(left, var(--color-gold) 25%, #dbb42c 37.5%, #c9a227, #b69121 62.5%, var(--color-gold) 75%);
+    background-image: linear-gradient(90deg, var(--color-gold) 25%, #dbb42c 37.5%, #c9a227, #b69121 62.5%, var(--color-gold) 75%);
+    background-position: right center;
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: var(--color-gold);
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    transition: color 200ms linear;
+}
+
+.glassy:hover {
+    background-position: left center;
+    color: #c9a227;
+    transition: background-position 2000ms ease-out;
 }
 
 /* --- STARS SECTION --- */
@@ -112,10 +130,15 @@ header, footer {
 
 @media only screen and (min-width: 992px) {
     .hero {
-        background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(media/damiandiaz.webp);
-        background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
         height: 100vh;
 }
+
+    .hero-txt {
+        transform: translate(-50%, 50%);
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
 }
