@@ -42,7 +42,6 @@ header, footer {
 
 .menu-link {
     font-size: 1.3em;
-    font-weight: 600;
     color: var(--color-gold);
     text-transform: uppercase;
 }
@@ -99,13 +98,13 @@ header, footer {
     color: var(--color-gold);
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
-    transition: color 200ms linear;
+    transition: color 250ms linear;
 }
 
 .glassy:hover {
     background-position: left center;
     color: #c9a227;
-    transition: background-position 2000ms ease-out;
+    transition: background-position 1000ms ease-out;
 }
 
 /* --- STARS SECTION --- */
@@ -130,6 +129,14 @@ header, footer {
 .star {
     font-size: 3.5rem;
     margin: 0 0.3em 0 0;
+}
+
+/* --- VIDEO SECTION --- */
+
+.video {
+    background-color: var(--color-white);
+    text-align: center;
+    margin: 0 0 1em 0;
 }
 
 /* --- FOOTER --- */
