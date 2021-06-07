@@ -161,15 +161,19 @@ header, footer {
 /* --- MEDIA QUERIES --- */
 
 @media only screen and (min-width: 992px) {
-    .menu ul li {
+    .menu-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10em;
+    margin: 0 2em;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-gold);
     text-transform: uppercase;
+}
+
+.menu-item {
+    margin: 0 1em;
 }
 
     .hero {
