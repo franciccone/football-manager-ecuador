@@ -89,8 +89,8 @@ header, footer {
 }
 
 .glassy {
-    background-image: -webkit-linear-gradient(left, var(--color-gold) 25%, #dbb42c 37.5%, #c9a227, #b69121 62.5%, var(--color-gold) 75%);
-    background-image: linear-gradient(90deg, var(--color-gold) 25%, #dbb42c 37.5%, #c9a227, #b69121 62.5%, var(--color-gold) 75%);
+    background-image: -webkit-linear-gradient(left, var(--color-gold) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-gold) 75%);
+    background-image: linear-gradient(90deg, var(--color-gold) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-gold) 75%);
     background-position: right center;
     background-size: 400% auto;
     -webkit-background-clip: text;
@@ -103,8 +103,8 @@ header, footer {
 
 .glassy:hover {
     background-position: left center;
-    color: #c9a227;
-    transition: background-position 1000ms ease-out;
+    color: #FCDB60;
+    transition: background-position 2000ms ease-out;
 }
 
 /* --- STARS SECTION --- */
