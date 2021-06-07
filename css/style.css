@@ -47,6 +47,10 @@ header, footer {
     text-transform: uppercase;
 }
 
+.menu-link:hover {
+    color: var(--color-white);
+}
+
 .hamburger {
     display: none;
 }
@@ -165,7 +169,6 @@ header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 2em;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-gold);
