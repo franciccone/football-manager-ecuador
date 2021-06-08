@@ -11,12 +11,21 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --color-white: #F3EDE2;
     --color-gold: #C8A977;
     --color-yellow: #FFCD00;
     --color-red: #C5113C;
     --color-blue: #00205C;
+} */
+
+:root {
+    --color-white: #FEFCFC;
+    --color-lime: #D0F707;
+    --color-ksu-purple: #551A90;
+    --color-russian-purple: #2C0C4A;
+    --color-medium-purple: #1b052e;
+    --color-dark-purple: #190A27;
 }
 
 html {
@@ -25,7 +34,7 @@ html {
 }
 
 header, footer {
-    background-color: var(--color-blue);
+    background-color: var(--color-dark-purple);
 }
 
 /* --- HEADER --- */
@@ -42,12 +51,12 @@ header, footer {
 
 .menu-link {
     font-size: 1.3em;
-    color: var(--color-gold);
+    color: var(--color-white);
     text-transform: uppercase;
 }
 
 .menu-link:hover {
-    color: var(--color-white);
+    color: var(--color-lime);
 }
 
 .hamburger {
@@ -61,7 +70,7 @@ header, footer {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--color-gold);
+    background-color: var(--color-white);
 }
 
 /* --- HERO --- */
@@ -84,18 +93,18 @@ header, footer {
 .hero-title {
     font-size: 3rem;
     font-weight: 900;
-    color: var(--color-gold);
+    color: var(--color-lime);
     text-transform: uppercase;
 }
 
 .glassy {
-    background-image: -webkit-linear-gradient(left, var(--color-gold) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-gold) 75%);
-    background-image: linear-gradient(90deg, var(--color-gold) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-gold) 75%);
+    background-image: -webkit-linear-gradient(left, var(--color-lime) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-lime) 75%);
+    background-image: linear-gradient(90deg, var(--color-lime) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-lime) 75%);
     background-position: right center;
     background-size: 400% auto;
     -webkit-background-clip: text;
     background-clip: text;
-    color: var(--color-gold);
+    color: var(--color-lime);
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
     transition: color 250ms linear;
@@ -114,7 +123,8 @@ header, footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-white);
+    color: var(--color-white);
+    background-image: linear-gradient(to bottom, rgba(36,24,48,1), rgba(27, 5, 46, 1));
     padding: 1em 3em;
 }
 
@@ -134,9 +144,21 @@ header, footer {
 /* --- VIDEO SECTION --- */
 
 .video {
-    background-color: var(--color-white);
-    text-align: center;
-    margin: 0 0 1em 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    background-image: linear-gradient(to bottom, rgba(27, 5, 46, 1), rgba(36,24,48,0.9));
+}
+
+.responsive-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* --- FOOTER --- */
@@ -154,18 +176,19 @@ header, footer {
 .icon-footer {
     margin: 0 0.4em;
     font-size: 1.3em;
-    color: var(--color-gold);
+    color: var(--color-white);
     transition: transform .2s;
 }
 
 .icon-footer:hover {
     transform: scale(1.15) !important;
+    color: var(--color-lime);
 }
 
 .footer-text {
     text-align: center;
     padding: 0 0 0.5em 0;
-    color: var(--color-gold);
+    color: var(--color-white);
     font-size: 0.8rem;
 }
 
@@ -178,7 +201,7 @@ header, footer {
     align-items: center;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--color-gold);
+    color: var(--color-dark-purple);
     text-transform: uppercase;
 }
 
@@ -204,7 +227,7 @@ header, footer {
     .icon-footer {
         margin: 0 0.5em;
         font-size: 1.5em;
-        color: var(--color-gold);
+        color: var(--color-white);
         transition: transform .2s;
     }
     
@@ -219,7 +242,7 @@ header, footer {
         left: -100%;
         top: 2.5rem;
         flex-direction: column;
-        background-color: var(--color-blue);
+        background-color: var(--color-dark-purple);
         width: 100%;
         text-align: center;
         transition: 0.3s;
