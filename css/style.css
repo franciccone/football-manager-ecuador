@@ -11,14 +11,6 @@
     box-sizing: border-box;
 }
 
-/* :root {
-    --color-white: #F3EDE2;
-    --color-gold: #C8A977;
-    --color-yellow: #FFCD00;
-    --color-red: #C5113C;
-    --color-blue: #00205C;
-} */
-
 :root {
     --color-white: #FEFCFC;
     --color-lime: #D0F707;
@@ -80,6 +72,7 @@ header, footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
+    padding: 1em 0;
 }
 
 .hero-txt {
@@ -97,23 +90,9 @@ header, footer {
     text-transform: uppercase;
 }
 
-.glassy {
-    background-image: -webkit-linear-gradient(left, var(--color-lime) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-lime) 75%);
-    background-image: linear-gradient(90deg, var(--color-lime) 25%, #FCDB60 37.5%, #C9AA3A, #B59521 62.5%, var(--color-lime) 75%);
-    background-position: right center;
-    background-size: 400% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: var(--color-lime);
-    -webkit-text-fill-color: transparent;
-    -text-fill-color: transparent;
-    transition: color 250ms linear;
-}
-
-.glassy:hover {
-    background-position: left center;
-    color: #FCDB60;
-    transition: background-position 2000ms ease-out;
+.hero-title:hover {
+    color: var(--color-white);
+    transition: color 400ms linear;
 }
 
 /* --- STARS SECTION --- */
@@ -141,7 +120,69 @@ header, footer {
     margin: 0 0.3em 0 0;
 }
 
+.glassy {
+    background-image: -webkit-linear-gradient(left, var(--color-lime) 25%, var(--color-white) 37.5%, #FFFF3F, #D4D700 62.5%, var(--color-lime) 75%);
+    background-image: linear-gradient(90deg, var(--color-lime) 25%, var(--color-white) 37.5%, #FFFF3F, #D4D700 62.5%, var(--color-lime) 75%);
+    background-position: right center;
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: var(--color-lime);
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    transition: color 250ms linear;
+}
+
+.glassy:hover {
+    background-position: left center;
+    color: var(--color-white);
+    transition: background-position 2000ms ease-out;
+}
+
+/* --- CHECK BLOG --- */
+
+.check-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em;
+    background-image: linear-gradient(to bottom, rgba(27, 5, 46, 1), rgba(25, 10, 39, 1));
+}
+
+.check-blog-box {
+    margin: 1.5em 1.5em;
+}
+
+.check-blog-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.check-blog-button {
+    background-color: var(--color-lime);
+    border: none;
+    border-radius: 3px;
+    color: var(--color-dark-purple);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.check-blog-button:hover {
+    background-color: var(--color-white);
+}
+
 /* --- FOOTER --- */
+
+footer {
+    padding: 1em 0;
+}
 
 .social-media-list {
     display: flex;
@@ -185,23 +226,34 @@ header, footer {
     text-transform: uppercase;
     }
 
-.menu-item {
-    margin: 0 1em;
-    }
+    .menu-item {
+        margin: 0 1em;
+        }
 
     .hero {
         background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(../media/damiandiaz.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 80vh;
+        height: 100vh;
     }
 
     .hero-txt {
+        top: 70%;
         transform: translate(-50%, 50%);
+        white-space: nowrap;
     }
 
     .hero-title {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
+    }
+
+    .check-blog {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .check-blog-title {
+        font-size: 4rem;
     }
 
     .icon-footer {
