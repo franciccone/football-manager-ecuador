@@ -217,27 +217,40 @@ footer {
 
 .main {
     background-color: var(--color-white);
-    height: 100vh;
-    margin: 0 5em
+    margin: 0 5em;
 }
 
 .us-title {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    text-align: left;
-    padding: 1em 0;
+    text-align: center;
+    padding: 1.5rem 0;
     color: var(--color-dark-purple);
 }
 
 .us-text {
     padding: 1em 0;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
     color: var(--color-dark-purple);
 }
 
 /* --- MEDIA QUERIES --- */
+
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+    .main {
+        min-height: 100vh;
+    }
+
+    .us-title {
+        text-align: left;
+    }
+    
+    .us-text {
+        text-align: left;
+    }
+}
 
 @media only screen and (min-width: 992px) {
     .menu-list {
@@ -290,6 +303,14 @@ footer {
     .icon-footer:hover {
         transform: scale(1.20) !important;
     }
+
+    .us-title {
+        text-align: left;
+    }
+    
+    .us-text {
+        text-align: left;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -328,5 +349,18 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
 
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+    .main {
+        min-height: 100vh;
+    }
+
+    .us-title {
+        text-align: left;
+    }
+    
+    .us-text {
+        text-align: left;
+    }
 }
