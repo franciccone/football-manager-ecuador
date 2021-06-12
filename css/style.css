@@ -250,14 +250,19 @@ footer {
 
 .blog-card {
     display: flex;
-    padding: 1.5rem 0;
     margin: 1.5em 0;
     border: solid 1px var(--color-lime);
     border-radius: 3px;
+    max-width: 1000px;
+    max-height: 278px;
 }
 
 .blog-card:hover {
     border: solid 1px var(--color-dark-purple);
+}
+
+.blog-img {
+    max-width: 600px;
 }
 
 .blog-title {
