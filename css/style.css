@@ -256,8 +256,8 @@ footer {
     margin: 1.5em 0;
     border: solid 1px var(--color-lime);
     border-radius: 3px;
-    max-width: 1000px;
-    max-height: 278px;
+    width: 100%;
+    height: auto;
 }
 
 .blog-card:hover {
@@ -265,7 +265,8 @@ footer {
 }
 
 .blog-img {
-    max-width: 600px;
+    width: 100%;
+    height: auto;
 }
 
 .blog-title {
@@ -283,7 +284,7 @@ footer {
 }
 
 .blog-button-box {
-    margin: 1.5em 0 0 1em;
+    margin: 1.5em 0;
 }
 
 .blog-button {
@@ -382,6 +383,12 @@ footer {
     .blog-card {
         display: flex;
         flex-direction: row;
+        max-width: 1000px;
+        max-height: 278px;
+    }
+
+    .blog-img {
+        max-width: 600px;
     }
 }
 
