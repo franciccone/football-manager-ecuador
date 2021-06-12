@@ -250,6 +250,9 @@ footer {
 
 .blog-card {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 1.5em 0;
     border: solid 1px var(--color-lime);
     border-radius: 3px;
@@ -374,6 +377,11 @@ footer {
     
     .us-text {
         text-align: left;
+    }
+
+    .blog-card {
+        display: flex;
+        flex-direction: row;
     }
 }
 
