@@ -123,6 +123,7 @@ footer {
     font-weight: 900;
     color: var(--color-lime);
     text-transform: uppercase;
+    transition: 500ms ease-out;
 }
 
 .hero-title:hover {
