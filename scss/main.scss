@@ -1,0 +1,38 @@
+@import "header";
+@import "footer";
+@import "hero";
+@import "stars";
+@import "checkblog";
+@import "blogpage";
+@import "nosotros";
+@import "mediaqueries";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&display=swap');
+
+/* --- RESET --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #FEFCFC;
+    --color-lime: #D0F707;
+    --color-ksu-purple: #551A90;
+    --color-russian-purple: #2C0C4A;
+    --color-medium-purple: #1b052e;
+    --color-dark-purple: #190A27;
+}
+
+html {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+}
+
+header, footer {
+    background-color: var(--color-dark-purple);
+}

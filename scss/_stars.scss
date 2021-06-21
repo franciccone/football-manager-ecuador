@@ -1,0 +1,43 @@
+/* --- STARS SECTION --- */
+
+.stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background-image: linear-gradient(to bottom, rgba(36,24,48,1), rgba(27, 5, 46, 1));
+    padding: 1em 3em;
+}
+
+.stars-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 2rem;
+}
+
+.star {
+    font-size: 3.5rem;
+    margin: 0 0.3em 0 0;
+}
+
+.glassy {
+    background-image: -webkit-linear-gradient(left, var(--color-lime) 25%, var(--color-white) 37.5%, #FFFF3F, #D4D700 62.5%, var(--color-lime) 75%);
+    background-image: linear-gradient(90deg, var(--color-lime) 25%, var(--color-white) 37.5%, #FFFF3F, #D4D700 62.5%, var(--color-lime) 75%);
+    background-position: right center;
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: var(--color-lime);
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    transition: color 250ms linear;
+}
+
+.glassy:hover {
+    background-position: left center;
+    color: var(--color-white);
+    transition: background-position 2000ms ease-out;
+}

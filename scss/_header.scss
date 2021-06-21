@@ -1,0 +1,35 @@
+/* --- HEADER --- */
+
+.header {
+    padding: 1em 0;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-link {
+    font-size: 1.3em;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    color: var(--color-lime);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-white);
+}

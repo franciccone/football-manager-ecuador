@@ -1,0 +1,34 @@
+/* --- FOOTER --- */
+
+footer {
+    padding: 1em 0;
+}
+
+.social-media-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icon {
+    margin: 0.5em 0;
+}
+
+.icon-footer {
+    margin: 0 0.4em;
+    font-size: 1.3em;
+    color: var(--color-white);
+    transition: transform .2s;
+}
+
+.icon-footer:hover {
+    transform: scale(1.15) !important;
+    color: var(--color-lime);
+}
+
+.footer-text {
+    text-align: center;
+    padding: 0 0 0.5em 0;
+    color: var(--color-white);
+    font-size: 0.8rem;
+}
