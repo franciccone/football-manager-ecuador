@@ -1,0 +1,344 @@
+/* --- HEADER --- */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&display=swap");
+.header {
+  padding: 1em 0; }
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.menu-link {
+  font-size: 1.3em;
+  color: var(--color-white);
+  text-transform: uppercase; }
+
+.menu-link:hover {
+  color: var(--color-lime); }
+
+.hamburger {
+  display: none; }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white); }
+
+/* --- FOOTER --- */
+footer {
+  padding: 1em 0; }
+
+.social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.social-media-icon {
+  margin: 0.5em 0; }
+
+.icon-footer {
+  margin: 0 0.4em;
+  font-size: 1.3em;
+  color: var(--color-white);
+  transition: transform .2s; }
+
+.icon-footer:hover {
+  transform: scale(1.15) !important;
+  color: var(--color-lime); }
+
+.footer-text {
+  text-align: center;
+  padding: 0 0 0.5em 0;
+  color: var(--color-white);
+  font-size: 0.8rem; }
+
+/* --- HERO --- */
+.hero {
+  background-image: linear-gradient(to bottom, rgba(32, 11, 50, 0.3), #241830), url(../media/damiandiaz.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  padding: 1em 0; }
+
+.hero-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center; }
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-lime);
+  text-transform: uppercase;
+  transition: 500ms ease-out; }
+
+.hero-title:hover {
+  color: var(--color-white);
+  transition: color 400ms linear; }
+
+/* --- STARS SECTION --- */
+.stars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background-image: linear-gradient(to bottom, #241830, #1b052e);
+  padding: 1em 3em; }
+
+.stars-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em 0;
+  font-size: 2rem; }
+
+.star {
+  font-size: 3.5rem;
+  margin: 0 0.2em 0 0; }
+
+.glassy {
+  background-image: -webkit-linear-gradient(left, var(--color-lime) 25%, var(--color-white) 37.5%, #FFFF3F, #D4D700 62.5%, var(--color-lime) 75%);
+  background-image: linear-gradient(90deg, var(--color-lime) 25%, var(--color-white) 37.5%, #FFFF3F, #D4D700 62.5%, var(--color-lime) 75%);
+  background-position: right center;
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--color-lime);
+  -webkit-text-fill-color: transparent;
+  -text-fill-color: transparent;
+  transition: color 250ms linear; }
+
+.glassy:hover {
+  background-position: left center;
+  color: var(--color-white);
+  transition: background-position 2000ms ease-out; }
+
+/* --- CHECK BLOG --- */
+.check-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1em;
+  background-image: linear-gradient(to bottom, #1b052e, #190a27); }
+
+.check-blog-box {
+  margin: 1.5em 1.5em; }
+
+.check-blog-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase; }
+
+.check-blog-button {
+  background-color: var(--color-lime);
+  border: none;
+  border-radius: 3px;
+  color: var(--color-dark-purple);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 900; }
+
+.check-blog-button:hover {
+  background-color: var(--color-white); }
+
+/* --- BLOG PAGE --- */
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto; }
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+  border: solid 1px var(--color-lime);
+  border-radius: 3px;
+  width: 100%;
+  height: auto; }
+
+.blog-card:hover {
+  border: solid 1px var(--color-dark-purple); }
+
+.blog-img {
+  width: 100%;
+  height: auto; }
+
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 1em 0;
+  color: var(--color-dark-purple); }
+
+.blog-description {
+  font-size: 1.1rem;
+  margin: 1em 1em;
+  color: var(--color-medium-purple); }
+
+.blog-button-box {
+  margin: 1.5em 0; }
+
+.blog-button {
+  background-color: var(--color-lime);
+  border: none;
+  border-radius: 3px;
+  color: var(--color-dark-purple);
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.blog-button:hover {
+  background-color: var(--color-white);
+  border: solid 2px var(--color-lime); }
+
+/* --- NOSOTROS --- */
+.main {
+  background-color: var(--color-white);
+  margin: 0 5em; }
+
+.us-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--color-dark-purple); }
+
+.us-text {
+  padding: 1em 0;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-dark-purple); }
+
+/* --- MEDIA QUERIES --- */
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+  .main {
+    min-height: 100vh; }
+  .us-title {
+    text-align: left; }
+  .us-text {
+    text-align: left; } }
+
+@media only screen and (min-width: 992px) {
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-dark-purple);
+    text-transform: uppercase; }
+  .menu-item {
+    margin: 0 1em; }
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(32, 11, 50, 0.3), #241830), url(../media/damiandiaz.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; }
+  .hero-txt {
+    top: 70%;
+    transform: translate(-50%, 50%);
+    white-space: nowrap; }
+  .hero-title {
+    font-size: 4.5rem; }
+  .check-blog {
+    display: flex;
+    flex-direction: row; }
+  .check-blog-title {
+    font-size: 4rem; }
+  .icon-footer {
+    margin: 0 0.5em;
+    font-size: 1.5em;
+    color: var(--color-white);
+    transition: transform .2s; }
+  .icon-footer:hover {
+    transform: scale(1.2) !important; }
+  .main {
+    min-height: 100vh; }
+  .us-title {
+    text-align: left; }
+  .us-text {
+    text-align: left; }
+  .blog-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    max-height: 278px; }
+  .blog-img {
+    max-width: 600px; } }
+
+@media only screen and (max-width: 768px) {
+  .menu-list {
+    position: fixed;
+    left: -100%;
+    top: 2.5rem;
+    flex-direction: column;
+    background-color: var(--color-dark-purple);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s; }
+  .menu-list.active {
+    left: 0; }
+  .menu-item {
+    margin: 1.5rem 0; }
+  .hamburger {
+    display: block;
+    cursor: pointer; }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0; }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); } }
+
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+  .main {
+    min-height: 100vh; }
+  .us-title {
+    text-align: left; }
+  .us-text {
+    text-align: left; } }
+
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box; }
+
+:root {
+  --color-white: #FEFCFC;
+  --color-lime: #D0F707;
+  --color-ksu-purple: #551A90;
+  --color-russian-purple: #2C0C4A;
+  --color-medium-purple: #1b052e;
+  --color-dark-purple: #190A27; }
+
+html {
+  font-family: 'Archivo', sans-serif;
+  font-size: 16px; }
+
+header, footer {
+  background-color: var(--color-dark-purple); }
