@@ -6,6 +6,9 @@
     background-size: cover;
     height: 75vh;
     padding: 1em 0;
+    @include desktop {
+        height: 100vh;
+    }
 }
 
 .hero-txt {
@@ -14,6 +17,11 @@
     left: 50%;
     transform: translate(-50%, -20%);
     text-align: center;
+    @include desktop {
+        top: 70%;
+        transform: translate(-50%, 50%);
+        white-space: nowrap;
+    }
 }
 
 .hero-title {
@@ -22,6 +30,9 @@
     color: var(--color-lime);
     text-transform: uppercase;
     transition: 500ms ease-out;
+    @include desktop {
+        font-size: 4.5rem;
+    }
 }
 
 .hero-title:hover {

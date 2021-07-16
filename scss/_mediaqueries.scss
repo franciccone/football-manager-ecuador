@@ -1,143 +1,31 @@
 /* --- MEDIA QUERIES --- */
 
-@media only screen and (min-width: 1024px) and (min-height: 1366px) {
-    .main {
-        min-height: 100vh;
-    }
-
-    .us-title {
-        text-align: left;
-    }
-    
-    .us-text {
-        text-align: left;
+@mixin pixel2 {
+    @media only screen and (max-width: 411px) {
+        @content;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .menu-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--color-dark-purple);
-    text-transform: uppercase;
-    }
-
-    .menu-item {
-        margin: 0 1em;
-        }
-
-    .hero {
-        background-image: linear-gradient(to bottom, rgba(32,11,50,0.3), rgba(36,24,48,1)), url(../media/damiandiaz.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
-
-    .hero-txt {
-        top: 70%;
-        transform: translate(-50%, 50%);
-        white-space: nowrap;
-    }
-
-    .hero-title {
-        font-size: 4.5rem;
-    }
-
-    .check-blog {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .check-blog-title {
-        font-size: 4rem;
-    }
-
-    .icon-footer {
-        margin: 0 0.5em;
-        font-size: 1.5em;
-        color: var(--color-white);
-        transition: transform .2s;
-    }
-    
-    .icon-footer:hover {
-        transform: scale(1.20) !important;
-    }
-
-    .main {
-        min-height: 100vh;
-    }
-
-    .us-title {
-        text-align: left;
-    }
-    
-    .us-text {
-        text-align: left;
-    }
-
-    .blog-card {
-        display: flex;
-        flex-direction: row;
-        max-width: 1000px;
-        max-height: 278px;
-    }
-
-    .blog-img {
-        max-width: 600px;
+@mixin small {
+    @media only screen and (min-width: 576px) {
+        @content;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .menu-list {
-        position: fixed;
-        left: -100%;
-        top: 2.5rem;
-        flex-direction: column;
-        background-color: var(--color-dark-purple);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .menu-list.active {
-        left: 0;
-    }
-
-    .menu-item {
-        margin: 1.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
     }
 }
 
-@media only screen and (min-width: 768px) and (min-height: 1024px) {
-    .main {
-        min-height: 100vh;
+@mixin desktop {
+    @media only screen and (min-width: 992px) {
+        @content;
     }
+}
 
-    .us-title {
-        text-align: left;
-    }
-    
-    .us-text {
-        text-align: left;
+@mixin large {
+    @media only screen and (min-width: 1200px) {
+        @content;
     }
 }

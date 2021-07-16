@@ -5,8 +5,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 500px;
+    width: auto;
     padding: 1em 1em;
-    background-image: linear-gradient(to bottom, rgba(27, 5, 46, 1), rgba(25, 10, 39, 1));
+    background-color: var(--color-russian-purple);
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .check-blog-box {
@@ -19,6 +24,9 @@
     color: var(--color-white);
     text-align: center;
     text-transform: uppercase;
+    @include desktop {
+        font-size: 4rem;
+    }
 }
 
 .check-blog-button {

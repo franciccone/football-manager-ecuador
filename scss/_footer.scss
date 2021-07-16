@@ -19,11 +19,18 @@ footer {
     font-size: 1.3em;
     color: var(--color-white);
     transition: transform .2s;
+    @include desktop {
+        margin: 0 0.5em;
+        font-size: 1.5em;
+    }
 }
 
 .icon-footer:hover {
     transform: scale(1.15) !important;
     color: var(--color-lime);
+    @include desktop {
+        transform: scale(1.20) !important;
+    }
 }
 
 .footer-text {

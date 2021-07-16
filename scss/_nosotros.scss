@@ -12,6 +12,9 @@
     text-align: center;
     padding: 1.5rem 0;
     color: var(--color-dark-purple);
+    @include tablet {
+        text-align: left;
+    }
 }
 
 .us-text {
@@ -19,4 +22,7 @@
     line-height: 1.5;
     text-align: center;
     color: var(--color-dark-purple);
+    @include tablet {
+        text-align: left;
+    }
 }

@@ -1,3 +1,4 @@
+@import "mediaqueries";
 @import "header";
 @import "footer";
 @import "hero";
@@ -5,7 +6,6 @@
 @import "checkblog";
 @import "blogpage";
 @import "nosotros";
-@import "mediaqueries";
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&display=swap');
 
 /* --- RESET --- */
@@ -35,4 +35,10 @@ html {
 
 header, footer {
     background-color: var(--color-dark-purple);
+}
+
+.main {
+    @include tablet {
+        min-height: 100vh;
+    }
 }
