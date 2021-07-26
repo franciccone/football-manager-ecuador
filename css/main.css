@@ -165,7 +165,8 @@ footer {
 
 .stars-paragraph {
   font-size: 1.5rem;
-  color: var(--color-medium-purple); }
+  color: var(--color-medium-purple);
+  text-align: center; }
 
 .stars {
   display: flex;
