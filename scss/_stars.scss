@@ -15,10 +15,18 @@
     justify-content: center;
     border: 2px solid red;
     margin: 0 30px;
+    width: 50%
 }
 
 .stars-title {
     font-size: 3rem;
+    color: var(--color-dark-purple);
+    margin-bottom: 0.5em;
+}
+
+.stars-paragraph {
+    font-size: 1.5rem;
+    color: var(--color-medium-purple);
 }
 
 .stars {
@@ -28,7 +36,7 @@
     justify-content: center;
     height: 500px;
     width: auto;
-    color: var(--color-russian-purple);
+    color: var(--color-medium-purple);
     background-color: var(--color-white);
     padding: 1em 3em;
     margin: 0 30px;
@@ -40,12 +48,12 @@
     flex-direction: row;
     align-items: center;
     margin: 1em 0;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
 .star {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     margin: 0 0.2em 0 0;
 }
 
