@@ -176,8 +176,8 @@ footer {
   width: auto;
   color: var(--color-medium-purple);
   background-color: var(--color-white);
-  padding: 1em 3em;
-  margin: 0 30px; }
+  padding: 2em 3em;
+  margin: 30px 30px; }
 
 .stars-line {
   display: flex;
