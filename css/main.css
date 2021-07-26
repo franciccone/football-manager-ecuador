@@ -148,15 +148,13 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  border: 2px solid green; }
+  justify-content: center; }
 
 .stars-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
   margin: 0 30px;
   width: 50%; }
 
@@ -179,8 +177,7 @@ footer {
   color: var(--color-medium-purple);
   background-color: var(--color-white);
   padding: 1em 3em;
-  margin: 0 30px;
-  border: 2px solid blue; }
+  margin: 0 30px; }
 
 .stars-line {
   display: flex;
