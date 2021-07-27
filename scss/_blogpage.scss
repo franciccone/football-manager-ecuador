@@ -20,6 +20,7 @@
     border-radius: 3px;
     width: 100%;
     height: auto;
+    transition: box-shadow .3s;
     @include desktop {
         flex-direction: row;
         max-width: 1000px;
@@ -29,6 +30,7 @@
 
 .blog-card:hover {
     border: solid 1px var(--color-dark-purple);
+    box-shadow: 0 0 16px rgba(33,33,33,.2); 
 }
 
 .blog-img {

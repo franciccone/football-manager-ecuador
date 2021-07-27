@@ -272,7 +272,8 @@ footer {
   border: solid 1px var(--color-lime);
   border-radius: 3px;
   width: 100%;
-  height: auto; }
+  height: auto;
+  transition: box-shadow .3s; }
   @media only screen and (min-width: 992px) {
     .blog-card {
       flex-direction: row;
@@ -280,7 +281,8 @@ footer {
       max-height: 278px; } }
 
 .blog-card:hover {
-  border: solid 1px var(--color-dark-purple); }
+  border: solid 1px var(--color-dark-purple);
+  box-shadow: 0 0 16px rgba(33, 33, 33, 0.2); }
 
 .blog-img {
   width: 100%;
