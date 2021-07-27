@@ -146,9 +146,14 @@ footer {
 /* --- STARS SECTION --- */
 .stars-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 30px 0; }
+  @media only screen and (min-width: 768px) {
+    .stars-section {
+      display: flex;
+      flex-direction: row; } }
 
 .stars-text {
   display: flex;
@@ -161,7 +166,8 @@ footer {
 .stars-title {
   font-size: 3rem;
   color: var(--color-dark-purple);
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  text-align: center; }
 
 .stars-paragraph {
   font-size: 1.5rem;
@@ -219,9 +225,6 @@ footer {
   width: auto;
   padding: 1em 1em;
   background-color: var(--color-russian-purple); }
-  @media only screen and (min-width: 992px) {
-    .check-blog {
-      flex-direction: row; } }
 
 .check-blog-box {
   margin: 1.5em 1.5em; }

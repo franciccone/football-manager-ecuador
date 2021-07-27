@@ -9,9 +9,9 @@
     width: auto;
     padding: 1em 1em;
     background-color: var(--color-russian-purple);
-    @include desktop {
-        flex-direction: row;
-    }
+    // @include desktop {
+    //     flex-direction: row;
+    // }
 }
 
 .check-blog-box {
