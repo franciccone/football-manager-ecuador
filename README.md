@@ -8,13 +8,17 @@ Football Manager is a series of football management simulation video games devel
 
 ## Description
 
-Technologies used:
+<b>Technologies used:</b>
 
 HTML
+
 CSS3
+
 SASS
+
 JavaScript (for the mobile menu)
+
 
 ## Author
 
-Francisco Ciccone
+[Francisco Ciccone](https://github.com/franciccone/gina-artesanias)
