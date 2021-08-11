@@ -4,7 +4,7 @@
 
 ## Description
 
-This Website was made for the Football Manager Ecuador's Official Research Team.
+This landing page with a blog post section was made for the Football Manager Ecuador's Official Research Team.
 
 They analyze, study, and judge the technical, physical, and mental attributes of every Ecuadorian Serie A and Serie B player.
 
