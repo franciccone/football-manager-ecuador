@@ -29,4 +29,4 @@ Live Preview: [See](https://franciccone.github.io/football-manager-ecuador/)
 
 ## Author
 
-[Francisco Ciccone](https://github.com/franciccone)
+[Francisco Ciccone](https://franciccone.github.io/portfolio/)
